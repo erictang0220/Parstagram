@@ -23,4 +23,8 @@ The following **bonus** features are implemented:
 
 Here's a walkthrough of implemented user stories:
 
-<img src='http://i.imgur.com/link/to/your/gif/file.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+### Sign Up + Bonus 1
+<img src='https://user-images.githubusercontent.com/50003319/159395508-c6e7de0b-b421-4c71-b661-506a6754216b.gif' title='Signup + bonus 1' width=250 alt='Signup + bonus 1' />
+
+### Log In + Bonus 2
+<img src='https://user-images.githubusercontent.com/50003319/159395520-a2562563-db6a-49cb-8bb1-3ed2de8adbd8.gif' title='Log In + Bonus 2' width=250 alt='Log In + Bonus 2' />
