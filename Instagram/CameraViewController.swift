@@ -21,6 +21,7 @@ class CameraViewController: UIViewController, UIImagePickerControllerDelegate, U
 		
 		let imageData = imageView.image!.pngData()
 		// binary object of the image
+		// image.png appears on Parse table
 		let file = PFFileObject(name: "image.png", data: imageData!)
 		
 		// contains the URL to the image
@@ -30,10 +31,10 @@ class CameraViewController: UIViewController, UIImagePickerControllerDelegate, U
 			if success {
 				// want to return to the feed view
 				self.dismiss(animated: true, completion: nil)
-				print("saved!")
+				print("Post picture saved!")
 			}
 			else {
-				print("error!")
+				print("error saving post picture!")
 			}
 		}
 		
@@ -57,7 +58,7 @@ class CameraViewController: UIViewController, UIImagePickerControllerDelegate, U
 	func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
 		let image = info[.editedImage] as! UIImage
 		let size = CGSize(width: 300, height: 300)
-		let scaledImage = image.af_imageScaled(to: size)
+		let scaledImage = image.af_imageAspectScaled(toFill: size)
 		
 		imageView.image = scaledImage
 		dismiss(animated: true, completion: nil)
@@ -68,16 +69,5 @@ class CameraViewController: UIViewController, UIImagePickerControllerDelegate, U
 
         // Do any additional setup after loading the view.
     }
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }
