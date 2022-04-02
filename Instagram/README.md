@@ -23,7 +23,7 @@ The following **bonus** features are implemented:
 Here's a walkthrough of implemented user stories:
 
 ### Required Features
-<img src='https://user-images.githubusercontent.com/50003319/160290729-959cc9ce-03e9-43b3-aa56-60a0ead48eac.gif' title='Required' width=250 alt='Required'/>
+<img src='https://user-images.githubusercontent.com/50003319/161393169-189c3330-17e3-4d9e-8002-a72de42716ca.gif' title='Required' width=250 alt='Required'/>
 
 ### Bonus Features
 <img src='https://user-images.githubusercontent.com/50003319/160502357-d4341aac-9290-430b-8b8b-e5738382e7cd.gif' title='Bonus' width=250 alt='Bonus'/>
